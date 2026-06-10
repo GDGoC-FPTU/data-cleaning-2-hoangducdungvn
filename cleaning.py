@@ -13,7 +13,6 @@ def mask_email(email):
     return parts[0][0] + "***@" + parts[1]
 
 def clean_data(input_file, output_file):
-    # Load the toxic data
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
